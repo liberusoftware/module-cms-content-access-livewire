@@ -12,7 +12,6 @@ final class ContentAccessLivewireServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-cms-content-access');
         Livewire::component('module-cms-content-access::access-checker', AccessChecker::class);
     }
 }
